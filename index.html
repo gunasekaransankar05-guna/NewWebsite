@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Year of Our Beautiful Bond</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&family=Arima:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="music-toggle" class="music-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="assets/music/song.mpeg" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <canvas id="stardust-canvas" class="stardust-canvas"></canvas>
+        <div class="petal-container" id="petal-container"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="2000">
+            <h1 class="title animate-text">
+                <span class="word">
+                    <span style="--i:1">O</span><span style="--i:2">n</span><span style="--i:3">e</span>
+                </span>
+                <span class="word">
+                    <span style="--i:4">Y</span><span style="--i:5">e</span><span style="--i:6">a</span><span
+                        style="--i:7">r</span>
+                </span>
+                <span class="word">
+                    <span style="--i:8">o</span><span style="--i:9">f</span>
+                </span>
+                <span class="word">
+                    <span style="--i:10">O</span><span style="--i:11">u</span><span style="--i:12">r</span>
+                </span>
+                <span class="word">
+                    <span style="--i:13">B</span><span style="--i:14">e</span><span style="--i:15">a</span><span
+                        style="--i:16">u</span><span style="--i:17">t</span><span style="--i:18">i</span><span
+                        style="--i:19">f</span><span style="--i:20">u</span><span style="--i:21">l</span>
+                </span>
+                <span class="word">
+                    <span style="--i:22">B</span><span style="--i:23">o</span><span style="--i:24">n</span><span
+                        style="--i:25">d</span>
+                </span>
+            </h1>
+            <p class="subtitle">Celebrating our love, our story, our forever.</p>
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Timeline / Our Story Section -->
+    <section class="timeline-section" id="story">
+        <h2 class="section-title" data-aos="fade-up">Our Journey</h2>
+        <div class="timeline">
+            <!-- Timeline items will be injected here or hardcoded -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="content">
+                    <h3>The Beginning</h3>
+                    <p>First meet, yet it felt like coming back to family</p>
+                    <span class="date">Feb 24, 2025</span>
+                </div>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="content">
+                    <h3>First Date</h3>
+                    <p>Together in peace, our journey begins here.🌸</p>
+                    <span class="date">May 01, 2025</span>
+                </div>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+
+
+    <!-- Dating Memories Section -->
+    <section class="dating-memories" id="special-dates">
+        <h2 class="section-title" data-aos="fade-up">Our Special Dates</h2>
+        <div class="memories-container">
+            <!-- Memory 1 -->
+            <div class="memory-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-image">
+                            <img src="assets/images/photo1.jpeg" alt="First Selfie">
+                        </div>
+                        <div class="memory-info">
+                            <span class="memory-date">Apr 25, 2025</span>
+                            <h3>First Selfie</h3>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <i class="fas fa-heart-pulse"></i>
+                        <p>This wasn’t just our first selfie… it was the first page of our story. Since that day, we’ve
+                            created memories that I’ll cherish for a lifetime. 📸✨</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 2 -->
+            <div class="memory-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-image">
+                            <img src="assets/images/photo2.jpeg" alt="First Date">
+                        </div>
+                        <div class="memory-info">
+                            <span class="memory-date">May 01, 2025</span>
+                            <h3>First Date</h3>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <i class="fas fa-coffee"></i>
+                        <p>Three hours felt like three minutes. Your laughter was the only melody I wanted to hear.✨💕
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 3 -->
+            <div class="memory-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-image">
+                            <img src="assets/images/photo3.png" alt="First Movie">
+                        </div>
+                        <div class="memory-info">
+                            <span class="memory-date">Dec 20, 2019</span>
+                            <h3>First Movie</h3>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <i class="fas fa-film"></i>
+                        <p>Our first movie together may have been simple, but it meant everything to me. Between the
+                            shared popcorn and quiet laughs, I found not just a movie partner, but a sister by
+                            heart.🎬💕
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory 4 -->
+            <div class="memory-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="memory-card-inner">
+                    <div class="memory-card-front">
+                        <div class="memory-image">
+                            <img src="assets/images/photo4.png" alt="Our Forever">
+                        </div>
+                        <div class="memory-info">
+                            <span class="memory-date">Feb 14, 2020</span>
+                            <h3>Our Forever</h3>
+                        </div>
+                    </div>
+                    <div class="memory-card-back">
+                        <i class="fas fa-ring"></i>
+                        <p>The day we decided to walk this path together. The start of our beautiful bond.🤍</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section" id="memories">
+        <h2 class="section-title" data-aos="fade-up">Memories</h2>
+        <div class="gallery-grid">
+            <!-- Images and Videos -->
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="assets/images/memory1.jpeg" alt="Memory 1">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/memory2.jpeg" alt="Memory 2">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <video autoplay muted loop>
+                    <source src="assets/videos/akka.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                <img src="assets/images/memory3.jpeg" alt="Memory 4">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                <img src="assets/images/memory4.jpeg" alt="Memory 5">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                <img src="assets/images/memory5.jpeg" alt="Memory 6">
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+                <img src="assets/images/memory6.jpeg" alt="Memory 7">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Surprise Gifts Section -->
+    <section class="gifts-section" id="gifts">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Surprise Gifts</h2>
+            <p class="section-subtitle" data-aos="fade-up">A little something for you...</p>
+
+            <div class="gifts-grid">
+                <!-- Gift 1 -->
+                <div class="gift-container" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gift-card-wrapper">
+                        <div class="gift-box-premium" id="gift-1">
+                            <div class="gift-lid-premium">
+                                <div class="lid-top"></div>
+                                <div class="lid-side"></div>
+                                <div class="gift-bow-premium"></div>
+                            </div>
+                            <div class="gift-body-premium">
+                                <div class="gift-ribbon-vertical"></div>
+                                <div class="gift-ribbon-horizontal"></div>
+                            </div>
+                            <div class="gift-surprise-content">
+                                <div class="surprise-inner">
+                                    <i class="fas fa-gem"></i>
+                                    <h3>Pure Heart</h3>
+                                    <p>Your smile is my favorite jewel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gift 2 -->
+                <div class="gift-container" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gift-card-wrapper">
+                        <div class="gift-box-premium" id="gift-2">
+                            <div class="gift-lid-premium">
+                                <div class="lid-top"></div>
+                                <div class="lid-side"></div>
+                                <div class="gift-bow-premium"></div>
+                            </div>
+                            <div class="gift-body-premium">
+                                <div class="gift-ribbon-vertical"></div>
+                                <div class="gift-ribbon-horizontal"></div>
+                            </div>
+                            <div class="gift-surprise-content">
+                                <div class="surprise-inner">
+                                    <i class="fas fa-crown"></i>
+                                    <h3>My Queen</h3>
+                                    <p>You rule my world, Akka.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gift 3 -->
+                <div class="gift-container" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gift-card-wrapper">
+                        <div class="gift-box-premium" id="gift-3">
+                            <div class="gift-lid-premium">
+                                <div class="lid-top"></div>
+                                <div class="lid-side"></div>
+                                <div class="gift-bow-premium"></div>
+                            </div>
+                            <div class="gift-body-premium">
+                                <div class="gift-ribbon-vertical"></div>
+                                <div class="gift-ribbon-horizontal"></div>
+                            </div>
+                            <div class="gift-surprise-content">
+                                <div class="surprise-inner">
+                                    <i class="fas fa-rocket"></i>
+                                    <h3>Infinite Journey</h3>
+                                    <p>To the moon and beyond with you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="letters-section" id="letters">
+        <h2 class="section-title" data-aos="fade-up">My Letters to You</h2>
+        <div class="letters-container">
+            <div class="envelope-wrapper" data-aos="flip-up">
+                <div class="envelope">
+                    <div class="front">
+                        <div class="stamp"><i class="fas fa-heart"></i></div>
+                        <div class="address">To My Akka</div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <p>My Dearest,</p>
+                            <p>Every moment with you is a treasure. Thank you for being my rock, my joy, and my
+                                everything. Here's to many more years of laughter and love.</p>
+                            <p class="signature">Forever yours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More letters can be added -->
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Full View">
+            <video id="lightbox-video" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Love Quiz Section -->
+    <section class="quiz-section" id="quiz">
+        <div class="quiz-bg-overlay"></div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">How Well Do You Know Us?</h2>
+            <div class="quiz-container" data-aos="zoom-in">
+                <!-- Start Screen -->
+                <div id="quiz-start" class="quiz-active">
+                    <div class="quiz-icon"><i class="fas fa-heart"></i></div>
+                    <h3>The Love Quiz</h3>
+                    <p>Are you ready to test your knowledge about our beautiful journey, Akka?</p>
+                    <button class="btn-premium" id="start-quiz-btn">Start Quiz</button>
+                </div>
+
+                <!-- Quiz Area -->
+                <div id="quiz-area" class="quiz-hidden">
+                    <div class="quiz-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="quiz-progress"></div>
+                        </div>
+                        <div class="quiz-stats">
+                            <span id="question-number">Question 1/5</span>
+                        </div>
+                    </div>
+                    <div class="question-container" id="question-text">
+                        <!-- Question will be injected here -->
+                    </div>
+                    <div class="options-grid" id="options-container">
+                        <!-- Options will be injected here -->
+                    </div>
+
+                    <!-- Wrong Answer Feedback Overlay -->
+                    <div id="quiz-feedback-overlay" class="quiz-feedback-overlay">
+                        <div class="crying-image-container"
+                            style="display: flex; justify-content: center; align-items: center;">
+                            <i class="fas fa-sad-tear"
+                                style="font-size: 8rem; color: var(--secondary-color); opacity: 0.8;"></i>
+                        </div>
+                        <p class="feedback-text-wrong">Oh no! Try again, Akka! 🥺</p>
+                    </div>
+                </div>
+
+                <!-- Result Screen -->
+                <div id="quiz-result" class="quiz-hidden">
+                    <div class="result-icon pulse-result"><i class="fas fa-trophy"></i></div>
+                    <h3>Amazing!</h3>
+                    <p id="quiz-score-text">You got 5/5</p>
+                    <p id="quiz-feedback">You know every detail of our love story perfectly!</p>
+                    <button class="btn-premium" id="restart-quiz-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Poem Section -->
+    <section class="poem-section" id="poem">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">A Poem for You</h2>
+            <div class="poem-container">
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="200">
+                    <span>என் உயிர் அக்கா</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="500">
+                    <span>நாம் ஒரே செடியில் பூத்த ரோஜாவும் இல்லை!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="800">
+                    <span>ஒரே தோட்டத்தில் பூத்த மல்லிகையும் இல்லை!!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="1100">
+                    <span>எங்கோ பூத்த குறிஞ்சி பூவே !!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="1400">
+                    <span>தவங்கள் பல நான் எடுத்தேனோ!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="1700">
+                    <span>நீ என் வாழ்வில் அதிர்ஷ்டமாக கிடைத்தாய்!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="2000">
+                    <span>ஒரே கூட்டில் உறங்கவும் இல்லை!! என்னை தூக்கி கொஞ்சிடவும் இல்லை!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="2300">
+                    <span>சண்டை போட்டு சமாதானம் படுத்தியதும் இல்லை!!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="2600">
+                    <span>இருப்பினும் சில சமயங்களில் உன் அன்பில் இரத்த உறவுகள் கூட தோற்றுப் போகிறதே!!!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="2900">
+                    <span>உன்னிடம் நான் இருந்த ஒவ்வொரு நொடியும் என் வாழ்வின் இமைக் காலமே !!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="3200">
+                    <span>பிரியும் கனம் கூட கரையை தொடும் அலைகள் போல ஓய்ந்து போகிறதே!!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="3500">
+                    <span>காலங்கள் பல கடந்தாலும் நாம் உறவின் பிரிவு .....</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="3800">
+                    <span>அது என் மரணமாக மட்டுமே இருக்கும்.......</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="4100">
+                    <span>ஏதேனும் மறுபிறவி ஒன்று என்று எனக்கு இருந்தால்!!</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="4400">
+                    <span>அதில் உன் அன்பிலும்!! அரவணைப்பிலும் !!! இருக்கும்</span>
+                </div>
+                <div class="poem-line" data-aos="fade-up" data-aos-delay="4700">
+                    <span>குழந்தையாக பிறந்து உன் மடியில் தவழ்ந்திட வேண்டும்!!!!</span>
+                </div>
+            </div>
+            <div class="poem-decoration" data-aos="zoom-in" data-aos-delay="1800">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion-section" id="conclusion">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title">One Last Thing...</h2>
+            <p class="section-subtitle">Our journey continues every single day.</p>
+            <div class="finish-journey-container">
+                <button class="btn-premium finish-btn" id="finish-journey-btn">
+                    Finish Our Journey <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Farewell Cinematic Overlay -->
+    <div id="farewell-overlay" class="farewell-overlay">
+        <video id="farewell-video" class="farewell-video" loop playsinline>
+            <source src="assets/videos/gift.mp4" type="video/mp4">
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-red-heart-shaped-balloons-floating-in-the-sky-4251-large.mp4"
+                type="video/mp4">
+        </video>
+        <div class="farewell-content">
+            <div class="giant-heart-container">
+                <div class="giant-heart"></div>
+            </div>
+            <div class="farewell-text">
+                <h2 class="farewell-title">To Be Continued...</h2>
+                <p class="farewell-message">...in our hearts, forever and always.</p>
+                <button class="btn-restart" onclick="location.reload()">Return to our story</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secret Treasure Trigger -->
+    <div class="secret-treasure" id="secret-trigger" title="Psst... a secret!">
+        <i class="fas fa-heart"></i>
+    </div>
+
+    <!-- Secret Video Modal -->
+    <div id="secret-video-modal" class="secret-modal">
+        <div class="secret-modal-content">
+            <span class="secret-close">&times;</span>
+            <div class="secret-video-wrapper">
+                <video id="secret-video" controls>
+                    <source src="assets/videos/voice.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="secret-text">
+                <h3>My Secret Video Gift</h3>
+                <p>With each passing day, my love for you grows deeper and stronger. ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ for you</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
