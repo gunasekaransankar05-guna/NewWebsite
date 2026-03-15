@@ -528,5 +528,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // First Call Section Interaction
+    const callIcon = document.getElementById('call-icon');
+    if (callIcon) {
+        callIcon.addEventListener('click', (e) => {
+            const rect = callIcon.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            // Celebrate with hearts and confetti
+            spawnHearts({ clientX: centerX, clientY: centerY });
+            spawnConfetti(centerX, centerY);
+
+            // Add a temporary animation class
+            callIcon.style.transform = 'scale(1.5) rotate(20deg)';
+            setTimeout(() => {
+                callIcon.style.transform = '';
+            }, 500);
+        });
+    }
+
+    // Hero Update Badge Interaction
+    const updateBadge = document.getElementById('update-badge');
+    const firstCallSection = document.getElementById('first-call');
+    if (updateBadge && firstCallSection) {
+        updateBadge.addEventListener('click', () => {
+            // Smooth scroll to First Call section
+            firstCallSection.scrollIntoView({ behavior: 'smooth' });
+
+            // Burst effect on click
+            const rect = updateBadge.getBoundingClientRect();
+            spawnHearts({ clientX: rect.left + rect.width / 2, clientY: rect.top + rect.height / 2 });
+            spawnConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        });
+    }
+
     console.log("Anniversary Website Loaded ❤️ - Cinematic Ending Ready & Secret Treasure Hidden");
+
+
 });
+
